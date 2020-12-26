@@ -1,0 +1,381 @@
+/*
+Theme Name: Sicep 
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Rossella Mascia
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sicep
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html, body {
+	height: 100%;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+/* footer */
+
+.footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: #000000;
+	color: #fff;
+}
+
+hr {
+	margin-bottom: 1rem !important;
+	border: 0;
+	border-top: 0.2rem solid #ffffff !important;
+}
+
+.privacy {
+	padding-top: 6rem;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 0.125rem solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.5rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-outline-light {
+	color: #f8f9fa;
+	border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+	color: #212529;
+	background-color: #f8f9fa;
+	border-color: #f8f9fa;
+}
+
+.btn-outline-light:focus, .btn-outline-light.focus {
+	box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-outline-light.disabled, .btn-outline-light:disabled {
+	color: #f8f9fa;
+	background-color: transparent;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show>.btn-outline-light.dropdown-toggle {
+	color: #212529;
+	background-color: #f8f9fa;
+	border-color: #f8f9fa;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show>.btn-outline-light.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-social {
+	border-radius: 100%;
+	display: inline-flex;
+	width: 3.25rem;
+	height: 3.25rem;
+	font-size: 1.25rem;
+	justify-content: center;
+	align-items: center;
+}
+
+/* fine footer */
+
+/* menu */
+
+a.bottone {
+	color: #ffffff !important;
+	/* colore del testo */
+	text-decoration: none;
+	/* eliminare la sottolineatura del testo */
+	background: #0d6eff;
+	/* sfondo del bottone */
+	padding: 0.7em 1em;
+	/* padding dal testo dal bordo del bottone */
+	outline: none;
+	/*  eliminare bordo*/
+}
+
+a.bottone:hover {
+	background: #000000;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* cambio dello sfondo al passagio del mouse */
+
+a.bottone:active {
+	background: #000000;
+}
+
+.menu-right {
+	background-color: #FFDD00;
+	padding-top: 50px;
+	width: 100%;
+}
+
+.navbar {
+	padding: 0rem 0rem !important;
+}
+
+#mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
+	color: #222;
+}
+
+.nav-tabs .menu-item {
+	margin-bottom: -1px;
+}
+
+.menu-item-type-custom {
+	padding-right: 0.8rem;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .menu-item.show .nav-link {
+	color: #495057;
+	background-color: #fff;
+	border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-fill .menu-item {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.nav-justified .menu-item {
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	#mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
+		color: #000000 !important;
+	}
+}
+
+/* fine menu */
+
+.bg-grigio {
+	background-color: #f0f0f0 !important;
+}
+
+.sfondotest {
+	background-size: cover;
+	background-position: center center;
+	background-image: url("img/chi-siamo.jpg");
+	background-repeat: no-repeat;
+}
+
+.sfondotestdue {
+	background-size: cover;
+	background-position: center center;
+	background-image: url("img/contattaci-all.jpg");
+	background-repeat: no-repeat;
+}
+
+.bg-come-lavoriamo {
+	background-size: contain;
+	background-position: center center;
+	background-image: url("img/come-lavoriamo.jpg");
+	background-repeat: no-repeat;
+}
+
+.boxcontenutocentrato {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+section {
+	padding: 0px 0 !important;
+}
+
+.loghi {
+	padding: 0.5rem !important;
+}
+
+/* contattaci */
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+	.sfondotestdue {
+		background-color: #FFDD00;
+		background-image: none;
+	}
+	.logo {
+		width: 50%;
+		height: auto;
+		padding-left: 0.3rem;
+	}
+	a.bottone {
+		color: #ffffff;
+		/* colore del testo */
+		text-decoration: none;
+		/* eliminare la sottolineatura del testo */
+		background: #0d6eff;
+		/* sfondo del bottone */
+		padding: 0.5em 0.5em;
+		/* padding dal testo dal bordo del bottone */
+		outline: none;
+		/*  eliminare bordo*/
+	}
+	.menu-right {
+		background-color: #FFDD00;
+		padding-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	.loghi {
+		padding: 0rem !important;
+	}
+	a:hover, a:focus {
+		color: #fcbd20;
+	}
+}
+
+/* form */
+
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 0em;
+}
+
+.contatto {
+	font-size: 1.7rem;
+}
+
+.ekit-wid-con .ekit-form form input[type=submit] {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: 0;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 12px 72px;
+	font-size: 0.9375rem;
+	background-color: #0d6eff;
+	border: 0px solid #0d6eff;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.ekit-wid-con .ekit-form form textarea {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	color: #495057;
+	background-color: transparent;
+	border: 2px solid #e7e7e7;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	border-top: 0px !important;
+	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	-o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	border-radius: 0px;
+	padding-left: 30px;
+	height: 176px;
+	resize: none;
+	padding-top: 15px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.ekit-form form input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	color: #495057;
+	background-color: transparent !important;
+	border-bottom: 2px solid #e7e7e7 !important;
+	border-top: 0px solid !important;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	-o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	height: 56px;
+	border-radius: 0px;
+	padding-left: 30px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.checkboxFour .wpcf7-list-item-label {
+	font-size: 30px;
+}
+
+.elementor-36 .elementor-element.elementor-element-1993c74f .elementor-button {
+	background-color: #0D6EFF;
+	border-radius: 0px;
+}
+
+#cf7md-form .mdc-text-field:not(.mdc-text-field--disabled):not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mdc-text-field__input {
+	border-bottom-color: #ffef85;
+	border-bottom: 3px solid #f0f0f0;
+}
+
+.cf7md-form .mdc-text-field--textarea .mdc-text-field__input {
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+	margin: 8px 1px 1px 0;
+	padding: 0 16px 16px;
+	border-bottom: 3px solid #f0f0f0 !important;
+}
+
+#cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, #cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, #cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+	border-color: transparent;
+}
+
+.ekit-wid-con .ekit-form form label span {
+	pointer-events: none;
+	color: #000000;
+	font-size: 0.8rem;
+	display: inline;
+}
+
+.elementor-2 .elementor-element.elementor-element-2481da1 .ekit-form form label span {
+	color: #000000 !important;
+}
